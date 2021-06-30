@@ -70,8 +70,6 @@ client.connect(err => {
     })
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello World! how nare you')
-})
 
-app.listen(4000)
+
+app.listen(process.env.PORT || 4000)

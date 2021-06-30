@@ -70,6 +70,8 @@ client.connect(err => {
     })
 });
 
-
+app.get('/', (req, res) =>{
+    res.send('welcome successfully done in ----')
+})
 
 app.listen(process.env.PORT || 4000)
